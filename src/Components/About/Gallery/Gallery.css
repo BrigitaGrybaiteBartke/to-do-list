@@ -2,26 +2,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
  }
 
  .photo {
     box-shadow: 2px 2px 5px rgb(134, 134, 134);
     margin: 10px;
-   
  }
-    /* text-align: center;
-    width: 200px;
-    height: 225px;
-    margin: 10px;
-    float: left;
- }
-*/
 
 .galleryImage {
     width: 150px;
     height: 200px;
-
 }
 
 
