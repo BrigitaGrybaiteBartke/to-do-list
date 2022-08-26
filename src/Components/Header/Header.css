@@ -1,3 +1,10 @@
 .navbar-nav .nav-link.active {
-    text-decoration: 3px #00bfa6 underline;
+    text-shadow: 3px 3px 2px rgb(134, 132, 132);
+    /* text-decoration: 3px rgb(134, 132, 132) underline; */
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }

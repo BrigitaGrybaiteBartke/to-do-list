@@ -6,7 +6,7 @@ import '../Header/Header.css'
 const Header = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav id="nav" className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                     <NavLink
                         className="navbar-brand"
@@ -44,7 +44,7 @@ const Header = () => {
                                     className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
                                     to="/todolist"
                                 >
-                                    To do List
+                                    To Do
                                 </NavLink>
                             </li>
 
