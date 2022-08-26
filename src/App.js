@@ -3,6 +3,7 @@ import './App.css';
 import About from './Components/About/About';
 import Gallery from './Components/About/Gallery/Gallery';
 import History from './Components/About/History/History';
+import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Notfound from './Components/Notfound/Notfound';
@@ -28,6 +29,7 @@ function App() {
             element={<Navigate to="notfound" />}
             />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
