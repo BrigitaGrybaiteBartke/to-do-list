@@ -1,21 +1,23 @@
 import React from 'react';
-import notfound from '../../Images/404.svg'
+import notfound from '../../Images/notfound.svg'
 
 const Notfound = (prop) => {
     return (
         <>
-         <div className='d-flex'>
-                <div className='row'>
-                    <img
-                        src={notfound}
-                        alt="pagenotfound"
-                        maxWidth='700px'
-                    />
-                </div>
-                <div className='row'>
-                    <div>
-                        <h3>Sorry, the page not found</h3>
-                        <span>The link you followed probably broken or the page has been removed.</span>
+            <div className='container'>
+                <div className='d-flex justify-content-around mt-4 mb-4'>
+                    <div className='row'>
+                        <img
+                            src={notfound}
+                            alt="pagenotfound"
+                            style={{width: '600px'}}
+                        />
+                    </div>
+                    <div className='row d-flex align-items-center'>
+                        <div>
+                            <h3>Sorry, the page not found</h3>
+                            <span>The link you followed probably broken or the page has been removed.</span>
+                        </div>
                     </div>
                 </div>
             </div>
