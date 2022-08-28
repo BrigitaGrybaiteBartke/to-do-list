@@ -1,13 +1,13 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './Components/About/About';
-import Gallery from './Components/About/Gallery/Gallery';
-import History from './Components/About/History/History';
-import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-import Notfound from './Components/Notfound/Notfound';
+import About from './Components/About/About';
+import History from './Components/About/History/History';
+import Gallery from './Components/About/Gallery/Gallery';
 import Todolist from './Components/Todolist/Todolist';
+import Notfound from './Components/Notfound/Notfound';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -22,7 +22,8 @@ function App() {
             <Route path='history' element={<History />} />
             <Route path='gallery' element={<Gallery />} />
           </Route>
-          <Route path='/todolist' element={<Todolist />} />
+          <Route path='/todolist' element={<Todolist />} >
+          </Route>
           <Route path='/notfound' element={<Notfound />} />
           <Route
             path='*'
