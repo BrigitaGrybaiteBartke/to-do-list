@@ -10,72 +10,77 @@ const About = () => {
     return (
         <>
             <div className='container'>
-                <div className='m-5 text-center'>
-                    <h4>About Us</h4>
+                <div className='row m-4'>
+                    <h4 className='text-center'>About Us</h4>
                 </div>
-                <div className='d-flex justify-content-evenly m-5'>
-                    <div>
-                        <div className='pb-2 text-center'>
-                            <img
-                                className='text-center'
-                                src={call}
-                                alt='appLogo'
-                                width="30px"
-                            />
+                <div className='row'>
+                    <div className='d-flex justify-content-evenly mb-5'>
+                        <div>
+                            <div className='pb-2 text-center'>
+                                <img
+                                    className='text-center'
+                                    src={call}
+                                    alt='appLogo'
+                                    width="30px"
+                                />
+                            </div>
+                            <div>
+                                <span>+370 (333) 33 333</span>
+                            </div>
                         </div>
                         <div>
-                            <span>+370 (333) 33 333</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='pb-2 text-center'>
-                            <img
-                                src={mail}
-                                alt='appLogo'
-                                width="30px"
-                            />
+                            <div className='pb-2 text-center'>
+                                <img
+                                    src={mail}
+                                    alt='appLogo'
+                                    width="30px"
+                                />
+                            </div>
+                            <div>
+                                <span>
+                                    <a href="mailto:email@example.com">email@example.com</a>
+                                </span>
+                            </div>
                         </div>
                         <div>
+                            <div className='pb-2 text-center'>
+                                <img
+                                    src={map}
+                                    alt='appLogo'
+                                    width="30px"
+                                />
+                            </div>
                             <span>
-                                <a href="mailto:email@example.com">email@example.com</a>
+                                Street 33, LT-33333, Lithuania
                             </span>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='pb-2 text-center'>
-                            <img
-                                src={map}
-                                alt='appLogo'
-                                width="30px"
-                            />
-                        </div>
-                        <span>
-                            Street 33, LT-33333, Lithuania
-                        </span>
-                        <div>
+                            <div>
 
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                <ul className="nav nav-tabs justify-content-center">
-                    <li className="nav-item">
-                        <Link
-                            className='nav-link'
-                            to="/about/history"
-                        >
-                            About History
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className='nav-link'
-                            to="/about/gallery"
-                        >
-                            Gallery
-                        </Link>
-                    </li>
-                </ul>
+                <div className='row'>
+                    <ul className="nav nav-tabs justify-content-center">
+                        <li className="nav-item">
+                            <Link
+                                className='nav-link'
+                                to="/about/history"
+                            >
+                                About History
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className='nav-link'
+                                to="/about/gallery"
+                            >
+                                Gallery
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+
                 <Outlet />
             </div>
 
