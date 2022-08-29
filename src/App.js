@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -12,7 +12,7 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path='/' element={<Navigate to="/home" />} />
@@ -31,7 +31,7 @@ function App() {
             />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
