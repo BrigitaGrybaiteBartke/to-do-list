@@ -11,7 +11,9 @@ const History = () => {
                     <div>
                         <img
                             id='historyImg'
-                            src={img} />
+                            src={img}
+                            alt="historyImage" 
+                            />
                     </div>
                     <div>
                         <h5 className='text-center'>What is Lorem Ipsum?</h5>
