@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-// import '../About/About.css'
 import call from '../../Images/Icons/call.svg'
 import mail from '../../Images/Icons/mail.svg'
 import map from '../../Images/Icons/map.svg'
@@ -14,8 +13,8 @@ const About = () => {
                     <h4 className='text-center'>About Us</h4>
                 </div>
                 <div className='row'>
-                    <div className='d-flex justify-content-evenly mb-5'>
-                        <div>
+                    <div id="media" className='d-flex justify-content-evenly mb-5'>
+                        <div className='media'>
                             <div className='pb-2 text-center'>
                                 <img
                                     className='text-center'
@@ -28,7 +27,7 @@ const About = () => {
                                 <span>+370 (333) 33 333</span>
                             </div>
                         </div>
-                        <div>
+                        <div className='media'>
                             <div className='pb-2 text-center'>
                                 <img
                                     src={mail}
@@ -42,7 +41,7 @@ const About = () => {
                                 </span>
                             </div>
                         </div>
-                        <div>
+                        <div className='media'>
                             <div className='pb-2 text-center'>
                                 <img
                                     src={map}

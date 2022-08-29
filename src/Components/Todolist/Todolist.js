@@ -80,7 +80,7 @@ const Todolist = () => {
                     </div>
                     {update && update ? (
                         <>
-                            <div className='m-2 d-flex'>
+                            <div id="media" className='m-2 d-flex'>
                                 <div>
                                     <input
                                         className='form-control'
@@ -88,7 +88,7 @@ const Todolist = () => {
                                         onChange={(e) => changeTask(e)}
                                     />
                                 </div>
-                                <div>
+                                <div className='media'>
                                     <button
                                         className='ms-2 btn btn-success'
                                         onClick={updateTask}
@@ -133,8 +133,10 @@ const Todolist = () => {
                                 .map((task) => (
                                     <div
                                         key={task.id}
-                                        className='d-flex justify-content-start align-items-center'>
+                                        className='d-flex justify-content-start align-items-center'
+                                        id="media">
                                         <li
+                                        id="resp"
                                             className={task.status ? 'list-group-item done' : 'list-group-item'}
                                         >
                                             {task.title}
