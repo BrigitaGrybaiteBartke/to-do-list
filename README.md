@@ -15,5 +15,3 @@ The To do list use JavaScript localstorage API's to persist a user form input in
 Access website with Github pages link:
 [address]
 (https://brigitagrybaitebartke.github.io/to-do-list/)
-
-The website is made for learning purposes.
